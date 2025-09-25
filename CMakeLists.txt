@@ -14,8 +14,8 @@ FetchContent_Declare(
 )
 
 FetchContent_MakeAvailable(Catch2)
-
 add_executable(hello_test tests/hello_test.cpp src/hello.cpp)
-add_executable(main main.cpp src/hello.cpp)
+add_executable(stringFinder_test tests/stringFinder_test.cpp src/stringFinder.cpp)
+add_executable(main main.cpp src/hello.cpp src/stringFinder.cpp)
 
-target_link_libraries(hello_test PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(stringFinder_test PRIVATE Catch2::Catch2WithMain)
