@@ -1,12 +1,9 @@
-//
-// Created by murta on 9/25/2025.
-//
-#ifndef HELLO_WORLD_STRINGFINDER_H
-#define HELLO_WORLD_STRINGFINDER_H
+#ifndef STRINGFINDER_H
+#define STRINGFINDER_H
 
 #include <string>
 
-int stringFinder(std::string str, char c);
-int stringFinder(std::string str, std::string target);
+int stringFinder(std::string str, char c, bool caseSensitive = true, int start = 0);
+int stringFinder(std::string str, std::string target, bool caseSensitive = true, int start = 0);
 
-#endif //HELLO_WORLD_STRINGFINDER_H
+#endif //STRINGFINDER_H

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.24)
 
-project(hello_world)
+project(StringFinder)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -19,3 +19,4 @@ add_executable(stringFinder_test tests/stringFinder_test.cpp src/stringFinder.cp
 add_executable(main main.cpp src/hello.cpp src/stringFinder.cpp)
 
 target_link_libraries(stringFinder_test PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(hello_test PRIVATE Catch2::Catch2WithMain)
