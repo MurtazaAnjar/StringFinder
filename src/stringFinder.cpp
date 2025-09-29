@@ -17,7 +17,6 @@ int stringFinder(std::string str, std::string target, bool caseSensitive, int st
     for (int i=start;i<str.length();i++) {
         int j = 0;
         bool found = false;
-
         if (caseSensitive) {
             while (str[j+i] == target[j]) {
                 if (j == target.length()-1) {
