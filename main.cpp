@@ -9,5 +9,5 @@ int main() {
   std::cout << stringFinder("hello","ell") << std::endl;
   std::cout << stringFinder("The quick brown fox", "quiet") << std::endl;
   std::cout << stringFinder("The quick brown fox", 'e', true, 1) << std::endl;
-  //detailed tests in test file
+  //detailed tests in test file.
 }
